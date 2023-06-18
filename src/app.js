@@ -1,5 +1,4 @@
 function formatDate(timestamp) {
-  // calculate the date
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
@@ -41,5 +40,4 @@ function displayTemperature(response) {
 let apiKey = "7f4590fo354t54d904d24b1af975d02a";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=New York&key=7f4590fo354t54d904d24b1af975d02a&units=imperial`;
 
-// console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
