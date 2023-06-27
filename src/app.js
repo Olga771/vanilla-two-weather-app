@@ -43,7 +43,7 @@ function displayForecast(response) {
       <div class="weather-forecast-date">
         ${formatDay(forecastDay.time)}</div>
         <img
-          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+          src="${forecastDay.condition.icon_url}"
           alt=""
           width="42"
         />
@@ -56,7 +56,6 @@ function displayForecast(response) {
           )}°</span>
         </div>
       </div>
-    </div>
   `;
     }
   });
