@@ -1,5 +1,31 @@
+@import url
+  "https://static.wixstatic.com/media/bb1bd6_e6e9a747aeb448a899cd0a5364426ed9~mv2.png/v1/fill/w_640,h_406,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bb1bd6_e6e9a747aeb448a899cd0a5364426ed9~mv2.png" * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: arial, sans-serif;
+  font-family: "Playfair", serif;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(11, 160, 164, 0.2);
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  color: whitesmoke;
+  padding: 20px 50px;
+  background: url(https://img.freepik.com/premium-photo/bunch-bubbles-that-are-floating-air-generative-ai_902639-2660.jpg);
+  background-repeat: no-repeat;
+  margin: 30px 50px;
+  overflow-y: hidden;
+  height: 91vh;
+  background-size: 100% 800px;
+  min-height: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  border: 15px solid rgba(24, 24, 27, 0.7);
 }
 
 h1 {
