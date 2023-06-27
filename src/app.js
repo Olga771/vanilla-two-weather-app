@@ -101,11 +101,30 @@ function search(city) {
   let apiKey = "7f4590fo354t54d904d24b1af975d02a";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=7f4590fo354t54d904d24b1af975d02a&units=metric`;
 
-  //let lat = position.coords.latitude;
-  //let lon = position.coords.longitude;
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
 
   axios.get(apiUrl).then(displayTemperature);
 }
+
+function displayWeatherCondition(response) {
+  getForecast(response.data.coord);
+}
+
+function searchLocation(position) {
+  let apiKey = "7f4590fo354t54d904d24b1af975d02a";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+  console.log(getCurrentLocation);
+}
+
+let currentLocationButton = document.querySelector("#current-location");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -142,4 +161,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("New York");
+search("Boston");

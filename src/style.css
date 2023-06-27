@@ -106,3 +106,15 @@ li::first-letter {
 .weather-forecast-temperature {
   font-size: 13px;
 }
+.gitHubLink,
+.netlifyLink {
+  text-decoration: underline;
+  color: rgb(27, 27, 173);
+  font-style: normal;
+}
+
+.searchCity {
+  border-radius: 5px;
+  box-shadow: #161515;
+  text-decoration: rgb(243, 164, 47);
+}
