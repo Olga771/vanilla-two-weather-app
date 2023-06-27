@@ -101,8 +101,8 @@ function search(city) {
   let apiKey = "7f4590fo354t54d904d24b1af975d02a";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=7f4590fo354t54d904d24b1af975d02a&units=metric`;
 
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
+  //let lat = position.coords.latitude;
+  //let lon = position.coords.longitude;
 
   axios.get(apiUrl).then(displayTemperature);
 }
