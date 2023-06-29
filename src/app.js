@@ -117,14 +117,14 @@ function searchLocation(position) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-  console.log(getCurrentLocation);
-}
+// function getCurrentLocation(event) {
+  //event.preventDefault();
+  //navigator.geolocation.getCurrentPosition(searchLocation);
+  //console.log(getCurrentLocation);
+//}
 
-let currentLocationButton = document.querySelector("#current-location");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+//let currentLocationButton = document.querySelector("#current-location");
+//currentLocationButton.addEventListener("click", getCurrentLocation); */
 
 function handleSubmit(event) {
   event.preventDefault();
