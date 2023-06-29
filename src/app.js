@@ -117,6 +117,7 @@ function searchLocation(position) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+<<<<<<< HEAD
 function getCurrentLocation() {
   navigator.geolocation.getCurrentPosition(searchLocation);
   console.log(getCurrentLocation);
@@ -124,6 +125,16 @@ function getCurrentLocation() {
 
 //let currentLocationButton = document.querySelector("#current-location");
 // currentLocationButton.addEventListener("click", getCurrentLocation);`
+=======
+// function getCurrentLocation(event) {
+  //event.preventDefault();
+  //navigator.geolocation.getCurrentPosition(searchLocation);
+  //console.log(getCurrentLocation);
+//}
+
+//let currentLocationButton = document.querySelector("#current-location");
+//currentLocationButton.addEventListener("click", getCurrentLocation); */
+>>>>>>> 7913d653ad7619cd99153ceb5c67e057892a67f7
 
 function handleSubmit(event) {
   event.preventDefault();
